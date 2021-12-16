@@ -26,6 +26,12 @@ class _ApplicationState extends State<Application> {
         ChangeNotifierProvider(
           create: (_) => UserDataProvider(),
         ),
+        ChangeNotifierProvider(
+          create: (_) => BleScanProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => PermissionsProvider(),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: Constants.debugBanner,

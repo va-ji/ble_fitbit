@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:user_onboarding/screens/bluetoothScan/bleScan.dart';
+import 'package:user_onboarding/screens/permissionScreen/permissionScreen.dart';
 
 import '../../../constants/constants.dart';
 import '../../../helpers/helpers.dart';
@@ -273,7 +275,9 @@ class _LoginFormState extends State<LoginForm> {
               () {
                 if (Constants.bypassBackend) {
                   data.assignAccessToken(Constants.devAccessToken);
-                  Navigator.of(context).pushReplacementNamed('/home');
+                  //Navigator.of(context).pushReplacementNamed('/home');
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => PermissionScreen()));
                   return;
                 }
                 performLogin(

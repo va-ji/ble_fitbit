@@ -4,3 +4,5 @@ export 'signup/signup.dart';
 export 'welcome/welcome.dart';
 export 'devEnvironment/devEnvironment.dart';
 export 'changePassword/changePassword.dart';
+export 'bluetoothScan/bleScan.dart';
+export 'permissionScreen/permissionScreen.dart';

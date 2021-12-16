@@ -7,7 +7,7 @@ class Constants {
   static ConnectionConstants connectionConstants = ConnectionConstants();
   static const bool devBuild = true;
   static const bool debugBanner = false;
-  static const bool bypassBackend = false;
+  static const bool bypassBackend = true;
   static const String devAccessToken = '';
   static final LoginAPIBody devUser = LoginAPIBody(
     username: 'user@launchpad.com',
